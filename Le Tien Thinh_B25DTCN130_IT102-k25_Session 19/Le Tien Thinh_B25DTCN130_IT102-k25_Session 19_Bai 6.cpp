@@ -1,5 +1,5 @@
 #include <stdio.h>
-void copyarray(int  *firstarray,int *secondarray,int *size){
+void copyArray(int  *firstarray,int *secondarray,int *size){
 	for(int i=0;i<*size;i++){
 		secondarray[i] = firstarray[i];	
 }
@@ -15,9 +15,10 @@ int main () {
 	printf("Number[%d]:",i);
 	scanf("%d",&firstarray[i]);
 	}
-	copyarray(firstarray,secondarray,&size);
+	copyArray(firstarray,secondarray,&size);
 	printf("Mang thu hai sau khi duoc copy la:\n");
 	for(i=0;i<size;i++){
 	printf(" %d ",secondarray[i]);
 	}
 }
+
